@@ -60,7 +60,7 @@ public class Exe10 {
         int senhaAleatoria = random.nextInt(90) + 1;
         System.out.println("\nSenha de atendimento: " + senhaAleatoria);
 
-        System.out.println("Siga até a recepção para continuar seu procedimento. Obrigado(a)!");
+        System.out.println("Siga até a recepção para continuar com o seu procedimento. Obrigado(a)!");
 
         sc.close();
     }
