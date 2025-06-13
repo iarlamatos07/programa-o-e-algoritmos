@@ -1,6 +1,6 @@
 import java.util.Scanner;
-public class Exe11 {
 
+public class Exe11 {
     public static void main(String[] args) {
         int soma = 0;
         int contador = 1;
