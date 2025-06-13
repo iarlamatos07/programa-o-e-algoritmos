@@ -34,7 +34,7 @@ public class Exe10 {
 
         switch (especialidade) {
 
-            case 1: System.out.println("Especialidade: Clínica Geral"); nomeEspecialidade = "Clínica Geral";break;
+            case 1: System.out.println("Especialidade: Clínica Geral"); nomeEspecialidade = "Clínica Geral"; break;
             case 2: System.out.println("Especialidade: Pediatria"); nomeEspecialidade = "Pediatria"; break;
             case 3: System.out.println("Especialidade: Cardiologia"); nomeEspecialidade = "Cardiologia"; break;
             case 4: System.out.println("Especialidade: Ortopedia"); nomeEspecialidade = "Ortopedia"; break;
@@ -42,7 +42,7 @@ public class Exe10 {
 
         }
 
-        System.out.println("\nIdade informada: " + idade);
+        System.out.println("\nIdade informada: " + idade +" anos");
         System.out.println("Plano médico escolhido: " + nomePlano);
         System.out.println("Especialidade: " + nomeEspecialidade);
 
@@ -56,16 +56,16 @@ public class Exe10 {
             System.out.println("\nAtendimento NORMAL!");
         }
 
-        if (plano == 1 && idade < 60){
-            System.out.println("ISENTO de taxa de consulta!");
-        } else if (plano == 1 && idade > 60) {
-            System.out.println("Taxa de consulta REDUZIDA: R$ 40,00.");
-        } else {
-            System.out.println("Taxa INTEGRAL de consulta: R$ 100,00.");
+        if (nomePlano.equals("Convênio") && idade > 60) {
+            System.out.println("Isento de taxa de consulta");
+        } else if (nomePlano.equals("Convênio") && idade <= 60) {
+            System.out.println("Taxa reduzida: R$40,00");
+        } else if (nomePlano.equals("Particular")) {
+            System.out.println("Taxa integral: R$100,00");
         }
 
-        // Gerador de senha aleatória entre 1000 e 9999
-        int senhaAleatoria = random.nextInt(9000) + 1000;
+        // Gerador de senha aleatória
+        int senhaAleatoria = random.nextInt(90) + 1;
         System.out.println("\nSenha de atendimento: " + senhaAleatoria);
 
         System.out.println("Siga até a recepção para continuar seu procedimento. Obrigado(a)!");
