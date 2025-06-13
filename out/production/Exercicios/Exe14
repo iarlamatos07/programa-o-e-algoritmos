@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Exe14 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite um número inteiro maior que zero: ");
+        int N = scanner.nextInt();
+
+        while (N <= 0) {
+            System.out.print("Número inválido. Digite um número inteiro maior que zero: ");
+            N = scanner.nextInt();
+        }
+
+        int contador = 1;
+        while (contador <= N) {
+            System.out.println(contador);
+            contador++;
+        }
+
+        scanner.close();
+    }
+}
