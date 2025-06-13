@@ -1,16 +1,16 @@
 import java.util.Scanner;
 
-public class Exe12 {
+public class Exe13 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int senha = 0;
+        int senha;
 
         System.out.print("Digite uma nota entre 0 e 10: ");
         senha = sc.nextInt();
 
-        while (senha < 0  10) {
+        while (senha < 0 || senha > 10) {
             System.out.println("Nota Inválida!");
-            System.out.print("Nota Válida: ");
+            System.out.print("Digite uma nota válida: ");
             senha = sc.nextInt();
         }
 
