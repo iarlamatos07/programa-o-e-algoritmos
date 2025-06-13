@@ -10,7 +10,7 @@ public class Exe12 {
 
         while (senha != 1234) {
             System.out.println("Senha incorreta!");
-            System.out.print("Digite a senha novamente: ");
+            System.out.print("Tente novamente: ");
             senha = sc.nextInt();
         }
 

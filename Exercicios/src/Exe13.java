@@ -1,14 +1,20 @@
 import java.util.Scanner;
 
-public class Exe13 {
+public class Exe12 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int senha;
+        int senha = 0;
 
-        while ((senha = sc.nextInt()) != 1234)
-            System.out.println("Senha incorreta. Tente novamente:");
+        System.out.print("Digite uma nota entre 0 e 10: ");
+        senha = sc.nextInt();
 
-        System.out.println("Acesso permitido.");
+        while (senha < 0  10) {
+            System.out.println("Nota Inválida!");
+            System.out.print("Nota Válida: ");
+            senha = sc.nextInt();
+        }
+
+        System.out.println("Acesso permitido!");
         sc.close();
     }
 }
