@@ -8,6 +8,7 @@ public class Exe15 {
 
         System.out.println("Digite as idades dos alunos. Digite 0 para encerrar.");
 
+
         while (true) {
             System.out.print("Informe a idade: ");
             idade = sc.nextInt();
