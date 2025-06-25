@@ -8,9 +8,8 @@ public class Exe17 {
         double saldo = 1000.00;
         int senhaDigitada;
 
-        System.out.println("=== Bem-vindo ao Caixa Eletrônico ===");
+        System.out.println("Bem-vindo ao Caixa Eletrônico");
 
-        // Loop de autenticação
         do {
             System.out.print("Digite sua senha: ");
             senhaDigitada = sc.nextInt();
@@ -21,7 +20,6 @@ public class Exe17 {
 
         int opcao = 0;
 
-        // Menu principal com while + switch
         while (opcao != 4) {
             System.out.println("\n--- Menu Principal ---");
             System.out.println("1 - Ver saldo");
